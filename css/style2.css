@@ -1,0 +1,11 @@
+.navbar-brand {
+    color: blue; /* Cambia el color del texto a azul */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    /* Agrega cualquier otra regla de estilo que desees */
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-item img {
+    height: 400px; /* Establece una altura fija para las imágenes */
+    width: auto; /* El ancho se ajustará automáticamente para mantener la proporción */
+  }
