@@ -42,3 +42,8 @@ nav ul {
   nav ul li a:hover {
     color: rgb(255, 255, 255);
   }
+
+    h1{
+    font-size: small;
+    font-family: Tahoma;
+    }
