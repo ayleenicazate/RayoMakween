@@ -22,17 +22,9 @@ html{
     object-fit: cover;
 }
   
-  .grid{
-    margin: auto;
-    max-width: 1100px;
-    justify-content: center;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
-    padding-bottom: 50px;
-}
+
 .container{
-    background-color: rgb(207, 147, 147); 
+    background-color: rgb(255, 255, 255); 
   }
 
 .container nav {
@@ -41,12 +33,75 @@ html{
     background-color: #fff;
     margin-bottom: 30px;
     color: #333;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-card {
+    display: none;
+}
+
+.container nav button {
+    display: none;
+}
+
+.nav-card li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.container nav i:hover > .buy-card{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+}
+
+.container nav i:hover .nav-card{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin #e1e1e1;
+}
+
+.container nav i:hover .buy-card > button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+.container nav i:hover .buy-card > button:hover {
+    border: solid thin #494848 ;
+    transition: all .4s;
 }
 
 
+.container nav i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.grid{
+    margin: auto;
+    max-width: 1100px;
+    justify-content: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    padding-bottom: 50px;
+}
+
 .items {
     border: solid thin #e1e1e1;
-    background-color: antiquewhite;
+    background-color: rgba(131, 131, 131, 0.158);
 }
 
 .items img {
