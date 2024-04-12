@@ -28,7 +28,7 @@ nav ul {
     list-style-type: none; /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #feb31b;
   }
   
   
@@ -47,3 +47,9 @@ nav ul {
     font-size: small;
     font-family: Tahoma;
     }
+
+    h2 {
+        text-align: center;
+      }
+
+
