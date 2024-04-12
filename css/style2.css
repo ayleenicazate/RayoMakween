@@ -15,10 +15,16 @@
     max-width: 100%;
      /* Para asegurar que las imágenes no excedan el ancho del contenedor */
     border-radius: 5px; /* Un ejemplo de estilo adicional */
-    height: auto;
+    height: 700px; /* se modifico por que si se deja en automatico no calza la segunda imagen*/
   }
 
   .container{
     width: auto;
     height: 50%;
   }
+
+  img {
+    width: 250px; /* Ancho deseado */
+    height: 250px; /* Alto deseado */
+    object-fit: cover;
+}
