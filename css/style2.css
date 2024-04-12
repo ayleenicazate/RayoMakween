@@ -28,3 +28,9 @@
     height: 250px; /* Alto deseado */
     object-fit: cover;
 }
+
+#logo {
+  width: 100px !important;
+  height: 50px !important;
+  object-fit: cover !important;
+}
