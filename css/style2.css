@@ -35,6 +35,12 @@
   object-fit: cover !important;
 }
 
+#nav{
+  background-color: brown !important;
+}
+
+
+
 html{
   font-size: 62.5%;
 }
