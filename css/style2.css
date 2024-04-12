@@ -34,3 +34,8 @@
   height: 50px !important;
   object-fit: cover !important;
 }
+
+#nav{
+  background-color: brown !important;
+}
+
