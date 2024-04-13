@@ -48,6 +48,7 @@ nav ul {
     h1{
     font-size: small;
     font-family: Tahoma;
+    color:white;
     }
 
     h2 {
@@ -67,3 +68,4 @@ nav ul {
       transform: translate(-50%, -50%);
     }
 
+    
