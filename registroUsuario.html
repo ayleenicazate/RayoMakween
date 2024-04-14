@@ -53,22 +53,41 @@
         </div>
       </nav>
 
-    <div style="text-align: center;">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
-          </div>
-    
-            <label for="inputPassword5" class="form-label">Contraseña</label>
-            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-            <div id="passwordHelpBlock" class="form-text">
-            Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emojis.
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Registrarte</button>
-            </div>
-          
-    </div>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Correo Electronico</label>
+          <input type="email" class="form-control" id="inputEmail4" value= "" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="inputPassword4"value= "" required>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Dirección 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" value= "" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Región</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Selecciona...</option>
+            <option>Valparaiso</option>
+            <option>Metropolitana</option>
+            <option>...</option>
+          </select>
+        </div>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Registrarte</button>
+        </div>
+      </form>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
