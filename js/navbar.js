@@ -28,9 +28,9 @@ function generateNavbar() {
     togglerButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
     container.appendChild(togglerButton);
 
-    getCityTemperature('Santiago').then(cityTemperature => {
+    getCityTemperature('Valparaiso').then(cityTemperature => {
       const temperatureSpan = document.createElement('span');
-      temperatureSpan.textContent = `Temperatura: ${cityTemperature}°C`;
+      temperatureSpan.textContent = `Temperatura: ${Math.round(cityTemperature)}°C`;
       container.appendChild(temperatureSpan);
     });
   
@@ -118,6 +118,6 @@ function generateNavbar() {
       return data.main.temp;
     } catch (error) {
       console.error('Error al obtener la temperatura:', error);
-      return null;
+      return 'error';
     }
   } 
