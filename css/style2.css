@@ -52,3 +52,9 @@ html{
   font-family: sans-serif;
 }
 
+.footer-makween{
+  width:max-content;
+  height: 150px;
+  background-color: black;
+
+}
