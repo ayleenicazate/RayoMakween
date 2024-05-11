@@ -27,6 +27,12 @@ function generateNavbar() {
     togglerButton.setAttribute('aria-label', 'Toggle navigation');
     togglerButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
     container.appendChild(togglerButton);
+
+    getCityTemperature('Santiago').then(cityTemperature => {
+      const temperatureSpan = document.createElement('span');
+      temperatureSpan.textContent = `Temperatura: ${cityTemperature}°C`;
+      container.appendChild(temperatureSpan);
+    });
   
     const collapseDiv = document.createElement('div');
     collapseDiv.classList.add('collapse', 'navbar-collapse');
@@ -97,6 +103,21 @@ function generateNavbar() {
     container.appendChild(cartLink);
   
     navbar.appendChild(container);
+
+
   
     return navbar;
   }
+
+  
+  async function getCityTemperature(city) {
+    try {
+      const apiKey = '533d0c39d81269e1b9e5aa5979a1720d'; 
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+      const data = await response.json();
+      return data.main.temp;
+    } catch (error) {
+      console.error('Error al obtener la temperatura:', error);
+      return null;
+    }
+  } 
