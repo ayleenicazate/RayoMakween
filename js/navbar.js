@@ -15,6 +15,7 @@ function generateNavbar() {
   
     const title = document.createElement('h1');
     title.textContent = 'Rayo Makween';
+    title.style.color = 'white'; 
     container.appendChild(title);
   
     const togglerButton = document.createElement('button');
@@ -28,11 +29,24 @@ function generateNavbar() {
     togglerButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
     container.appendChild(togglerButton);
 
+    // getCityTemperature('Valparaiso').then(cityTemperature => {
+    //   const temperatureSpan = document.createElement('span');
+    //   temperatureSpan.textContent = `Temperatura: ${Math.round(cityTemperature)}°C`;
+    //   container.appendChild(temperatureSpan);
+    // });
+
     getCityTemperature('Valparaiso').then(cityTemperature => {
       const temperatureSpan = document.createElement('span');
-      temperatureSpan.textContent = `Temperatura: ${Math.round(cityTemperature)}°C`;
+      
+      const thermometerIcon = document.createElement('i');
+      thermometerIcon.classList.add('fas', 'fa-thermometer-half'); // Clases de Font Awesome para el ícono de termómetro
+      
+      temperatureSpan.appendChild(thermometerIcon);
+      temperatureSpan.append(` ${Math.round(cityTemperature)}°C`);
+      temperatureSpan.style.color = 'white';     
+      temperatureSpan.style.marginRight = '10px';
       container.appendChild(temperatureSpan);
-    });
+  });
   
     const collapseDiv = document.createElement('div');
     collapseDiv.classList.add('collapse', 'navbar-collapse');
