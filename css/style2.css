@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Jaini&family=Jersey+15&family=Shadows+Into+Light&display=swap');
+
+.jaini-regular {
+  font-family: "Jaini", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navbar-brand {
     color: blue; /* Cambia el color del texto a azul */
     font-family: Arial, sans-serif; /* Cambia la fuente del texto */
@@ -58,3 +66,5 @@ html{
   background-color: black;
 
 }
+
+

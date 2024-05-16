@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Jersey+15&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Jaini&family=Jersey+15&family=Shadows+Into+Light&display=swap');
+/*/* .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 20px;
+    padding: 20px;
+    font-size: clamp(12px, 4vh, 32px);
+} */
+/*
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+/* .main-container {
+    display: flex;
+    grid: 0%;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto; 
+    gap: 20px;
+    padding: 20px;
+    background-color:none;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+} */
+
+
+.login {
+    border: 1px solid black;
+    width: 600px;
+    height: 500px;
+    background: url('../assets/login.avif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+
+}
+
+form {
+    display: block; 
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 3px;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    display: flex;
+}
+
+/* #sign {
+    font-weight: normal;
+    font-size: 20px; 
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+} */
+
+/* .form-label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: initial;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+} */
+
+/* input {
+    background: rgba(225, 225, 225, 0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+} */
+
+/* .login .form-control {
+    margin-bottom: 10px;
+} */
+
+/* .login .btn-primary {
+    width: 100%;
+} */
+
+.bg {
+    background-image: url('../assets/imglogin.jpg');
+    background-position: center center;
+}
+
+
+
+
+

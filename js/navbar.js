@@ -6,7 +6,7 @@ function generateNavbar() {
     container.classList.add('container-fluid');
   
     const logo = document.createElement('img');
-    logo.src = 'img/logo.png';
+    logo.src = 'assets/logo.png';
     logo.alt = 'Logo';
     logo.classList.add('d-inline-block', 'align-text-top');
     logo.style.width = '10%'; 
@@ -16,6 +16,7 @@ function generateNavbar() {
     const title = document.createElement('h1');
     title.textContent = 'Rayo Makween';
     title.style.color = 'white'; 
+    title.classList.add('jaini-regular');
     container.appendChild(title);
   
     const togglerButton = document.createElement('button');
