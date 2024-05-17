@@ -59,17 +59,21 @@ function generateNavbar() {
       temperatureSpan.style.color = 'white';     
       temperatureSpan.style.fontSize = '2.5rem';
 
-      // Añadir atributos para el popover
+      // popover
       temperatureSpan.setAttribute('data-bs-toggle', 'popover');
       temperatureSpan.setAttribute('data-bs-content', 'Esto funciona gracias a la API Open Weather Map');
-      temperatureSpan.setAttribute('data-bs-placement', 'bottom');
+      temperatureSpan.setAttribute('data-bs-placement', 'left');
 
       container.appendChild(temperatureSpan);
+      
+      const popover = new bootstrap.Popover(temperatureSpan);
 
-      // Inicializar el popover después de añadir el elemento al DOM
-      const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-      const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-          return new bootstrap.Popover(popoverTriggerEl);
+      temperatureSpan.addEventListener('click', () => {
+          popover.show();
+
+          setTimeout(() => {
+              popover.hide();
+          }, 3000); //tiempo medido en milisegundos
       });
   });
 
