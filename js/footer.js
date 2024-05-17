@@ -1,48 +1,22 @@
 function generateFooter() {
-    const style = document.createElement('style');
-    style.textContent = `
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 5px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-            gap: 5px;
-            margin-top: auto;
-        }
-        .footer-section {
-            padding: 15px;
-        }
-        .footer-section h3 {
-            margin-bottom: 10px;
-        }
-        .footer-section p,
-        .footer-section a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .footer-section a:hover {
-            text-decoration: underline;
-        }
-    `;
-    document.head.appendChild(style);
-
     const footer = document.createElement('footer');
-    
+    footer.style.backgroundColor = '#000';
+    footer.style.color = '#fff';
+    footer.style.padding = '20px';
+    footer.style.display = 'grid';
+    footer.style.gridTemplateColumns = '1fr 1fr 1fr';
+    footer.style.gridTemplateRows = 'auto';
+    footer.style.gap = '20px';
+    footer.style.marginTop = 'auto';
+
     const aboutSection = document.createElement('div');
     aboutSection.classList.add('footer-section');
     const aboutTitle = document.createElement('h3');
     aboutTitle.textContent = 'Sobre Nosotros';
+    aboutTitle.style.marginBottom = '10px';
     const aboutText = document.createElement('p');
     aboutText.textContent = 'Somos un taller mecánico dedicado a brindar el mejor servicio para tu vehículo.';
+    aboutText.style.color = '#fff';
     aboutSection.appendChild(aboutTitle);
     aboutSection.appendChild(aboutText);
 
@@ -50,8 +24,10 @@ function generateFooter() {
     hoursSection.classList.add('footer-section');
     const hoursTitle = document.createElement('h3');
     hoursTitle.textContent = 'Horas de Atención';
+    hoursTitle.style.marginBottom = '10px';
     const hoursText = document.createElement('p');
     hoursText.textContent = 'Lunes a Viernes, 8:00 AM - 6:00 PM';
+    hoursText.style.color = '#fff';
     hoursSection.appendChild(hoursTitle);
     hoursSection.appendChild(hoursText);
 
@@ -59,8 +35,10 @@ function generateFooter() {
     contactSection.classList.add('footer-section');
     const contactTitle = document.createElement('h3');
     contactTitle.textContent = 'Contáctanos';
+    contactTitle.style.marginBottom = '10px';
     const contactText = document.createElement('p');
     contactText.innerHTML = 'Teléfono: +56 9 1234 5678<br>Email: contacto@taller.com';
+    contactText.style.color = '#fff';
     contactSection.appendChild(contactTitle);
     contactSection.appendChild(contactText);
 
@@ -70,6 +48,7 @@ function generateFooter() {
 
     document.body.appendChild(footer);
 }
+
 
 // Llama a la función generateFooter después de que la página haya terminado de cargarse
 document.addEventListener('DOMContentLoaded', (event) => {

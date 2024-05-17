@@ -46,7 +46,7 @@ function generateNavbar() {
       temperatureSpan.appendChild(thermometerIcon);
       temperatureSpan.append(` ${Math.round(cityTemperature)}°C`);
       temperatureSpan.style.color = 'white';     
-      temperatureSpan.style.fontSizeAdjust = '3rem';
+      temperatureSpan.style.fontSize = '2.5rem';
       container.appendChild(temperatureSpan);
   });
   
