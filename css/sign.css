@@ -31,8 +31,8 @@
     grid: 0%;
     justify-content: center;
     align-items: center;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
     gap: 20px;
     padding: 20px;
     background-color:none;
@@ -42,25 +42,59 @@
 
 
 
-.login {
+/* .login {
     border: 1px solid black;
-    /* width: 580px;
-    height: 650px; */
+
     background: url('../assets/login.avif');
-    background-size: cover;
+
     background-position: center;
     color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
     overflow: hidden;
-    /* position: absolute; */
-    /* object-fit: cover; */
+    position: relative; 
+    object-fit: cover; 
 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 10px; 
+    max-width: 90%; 
+    max-height: 100%; 
+}   */
+
+.login {
+    border: 1px solid black;
+    background: url('../assets/login.avif');
+    background-position: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    margin: 10px;
+    max-width: 90%; 
+    max-height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(90vh - 70px); /* Ajusta el tamaño para considerar el navbar y el footer */
+    margin-top: none; /* Ajusta si es necesario para el navbar */
+    margin-bottom: none; /* Ajusta si es necesario para el footer */
 }
 
 form {
     font-size: 17px;
-    display: block; 
+    display: block;
     box-sizing: border-box;
     flex-direction: column;
     padding: 40px;
