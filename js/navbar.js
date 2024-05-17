@@ -17,6 +17,7 @@ function generateNavbar() {
     title.textContent = 'Rayo Makween';
     title.style.color = 'white'; 
     title.classList.add('jaini-regular');
+    title.style.fontSize = '6rem'
     container.appendChild(title);
   
     const togglerButton = document.createElement('button');
@@ -45,7 +46,7 @@ function generateNavbar() {
       temperatureSpan.appendChild(thermometerIcon);
       temperatureSpan.append(` ${Math.round(cityTemperature)}°C`);
       temperatureSpan.style.color = 'white';     
-      temperatureSpan.style.marginRight = '10px';
+      temperatureSpan.style.fontSizeAdjust = '3rem';
       container.appendChild(temperatureSpan);
   });
   
@@ -70,6 +71,7 @@ function generateNavbar() {
       a.classList.add('nav-link');
       a.href = item.link;
       a.textContent = item.text;
+      a.style.fontSize = '2rem'
       li.appendChild(a);
       ul.appendChild(li);
     });
