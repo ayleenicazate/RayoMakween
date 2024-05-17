@@ -9,9 +9,17 @@ function generateNavbar() {
     logo.src = 'assets/logo.png';
     logo.alt = 'Logo';
     logo.classList.add('d-inline-block', 'align-text-top');
-    logo.style.width = '10%'; 
-    logo.style.height = '10%'; 
+    logo.style.width = '40%'; 
+    logo.style.height = '40%'; 
     container.appendChild(logo);
+    // Crear el elemento de enlace
+    const logoLink = document.createElement('a');
+    logoLink.href = 'index.html'; // Reemplaza 'otra_vista.html' con la ruta de tu otra vista HTML
+    logoLink.appendChild(logo); // Agregar la imagen del logo al elemento de enlace
+
+    // Agregar el enlace al contenedor
+    container.appendChild(logoLink);
+
   
     const title = document.createElement('h1');
     title.textContent = 'Rayo Makween';
