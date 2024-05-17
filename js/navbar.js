@@ -25,6 +25,7 @@ function generateNavbar() {
     title.textContent = 'Rayo Makween';
     title.style.color = 'white'; 
     title.classList.add('jaini-regular');
+    title.style.fontSize = '6rem'
     container.appendChild(title);
   
     const togglerButton = document.createElement('button');
@@ -53,7 +54,7 @@ function generateNavbar() {
       temperatureSpan.appendChild(thermometerIcon);
       temperatureSpan.append(` ${Math.round(cityTemperature)}°C`);
       temperatureSpan.style.color = 'white';     
-      temperatureSpan.style.marginRight = '10px';
+      temperatureSpan.style.fontSizeAdjust = '3rem';
       container.appendChild(temperatureSpan);
   });
   
@@ -78,6 +79,7 @@ function generateNavbar() {
       a.classList.add('nav-link');
       a.href = item.link;
       a.textContent = item.text;
+      a.style.fontSize = '2rem'
       li.appendChild(a);
       ul.appendChild(li);
     });
@@ -94,6 +96,7 @@ function generateNavbar() {
     dropdownToggle.dataset.bsToggle = 'dropdown';
     dropdownToggle.setAttribute('aria-expanded', 'false');
     dropdownToggle.textContent = 'Mecánicos';
+    dropdownToggle.style.fontSize = '1.5rem'
     dropdownDiv.appendChild(dropdownToggle);
   
     const dropdownMenu = document.createElement('ul');
@@ -111,6 +114,7 @@ function generateNavbar() {
       a.classList.add('dropdown-item');
       a.href = mechanic.link;
       a.textContent = mechanic.text;
+      a.style.fontSize = '1.5rem';
       li.appendChild(a);
       dropdownMenu.appendChild(li);
     });
@@ -123,6 +127,7 @@ function generateNavbar() {
     cartLink.target = '_blank';
     cartLink.href = 'carrito.html';
     cartLink.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
+    cartLink.style.fontSize = '1.5rem';
     container.appendChild(cartLink);
   
     navbar.appendChild(container);
