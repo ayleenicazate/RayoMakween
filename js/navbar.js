@@ -12,12 +12,10 @@ function generateNavbar() {
     logo.style.width = '40%'; 
     logo.style.height = '40%'; 
     container.appendChild(logo);
-    // Crear el elemento de enlace
-    const logoLink = document.createElement('a');
-    logoLink.href = 'index.html'; // Reemplaza 'otra_vista.html' con la ruta de tu otra vista HTML
-    logoLink.appendChild(logo); // Agregar la imagen del logo al elemento de enlace
 
-    // Agregar el enlace al contenedor
+    const logoLink = document.createElement('a');
+    logoLink.href = 'index.html'; 
+    logoLink.appendChild(logo); 
     container.appendChild(logoLink);
 
   
@@ -28,6 +26,10 @@ function generateNavbar() {
     title.style.fontSize = '6rem'
     container.appendChild(title);
   
+    const togglerContainer = document.createElement('div');
+    togglerContainer.style.display = 'flex';
+    togglerContainer.style.alignItems = 'center';
+
     const togglerButton = document.createElement('button');
     togglerButton.classList.add('navbar-toggler');
     togglerButton.type = 'button';
@@ -38,6 +40,7 @@ function generateNavbar() {
     togglerButton.setAttribute('aria-label', 'Toggle navigation');
     togglerButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
     container.appendChild(togglerButton);
+    container.appendChild(togglerContainer);
 
     // getCityTemperature('Valparaiso').then(cityTemperature => {
     //   const temperatureSpan = document.createElement('span');
@@ -45,19 +48,27 @@ function generateNavbar() {
     //   container.appendChild(temperatureSpan);
     // });
 
+    const infoContainer = document.createElement('div');
+    infoContainer.style.display = 'flex';
+    infoContainer.style.alignItems = 'center';
+    infoContainer.style.gap = '20px';
+    infoContainer.style.marginLeft = 'auto';
+
     getCityTemperature('Valparaiso').then(cityTemperature => {
       const temperatureSpan = document.createElement('span');
       
       const thermometerIcon = document.createElement('i');
-      thermometerIcon.classList.add('fas', 'fa-thermometer-half'); // Clases de Font Awesome para el ícono de termómetro
+      thermometerIcon.classList.add('fas', 'fa-thermometer-half'); 
       
       temperatureSpan.appendChild(thermometerIcon);
       temperatureSpan.append(` ${Math.round(cityTemperature)}°C`);
       temperatureSpan.style.color = 'white';     
       temperatureSpan.style.fontSize = '2.5rem';
       container.appendChild(temperatureSpan);
-  });
+    });
   
+    container.appendChild(infoContainer);
+
     const collapseDiv = document.createElement('div');
     collapseDiv.classList.add('collapse', 'navbar-collapse');
     collapseDiv.id = 'navbarTogglerDemo02';
@@ -126,8 +137,9 @@ function generateNavbar() {
     const cartLink = document.createElement('a');
     cartLink.target = '_blank';
     cartLink.href = 'carrito.html';
-    cartLink.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
-    cartLink.style.fontSize = '1.5rem';
+    cartLink.innerHTML = '<i class="fa-solid fa-screwdriver-wrench"></i>';
+    cartLink.style.color = 'white';     
+    cartLink.style.fontSize = '2.5rem';
     container.appendChild(cartLink);
   
     navbar.appendChild(container);

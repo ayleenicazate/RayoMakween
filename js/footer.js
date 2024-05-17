@@ -17,6 +17,8 @@ function generateFooter() {
     const aboutText = document.createElement('p');
     aboutText.textContent = 'Somos un taller mecánico dedicado a brindar el mejor servicio para tu vehículo.';
     aboutText.style.color = '#fff';
+    aboutTitle.style.fontSize = '3rem';
+    aboutText.style.fontSize = '1.5rem';
     aboutSection.appendChild(aboutTitle);
     aboutSection.appendChild(aboutText);
 
@@ -28,6 +30,8 @@ function generateFooter() {
     const hoursText = document.createElement('p');
     hoursText.textContent = 'Lunes a Viernes, 8:00 AM - 6:00 PM';
     hoursText.style.color = '#fff';
+    hoursTitle.style.fontSize = '3rem';
+    hoursText.style.fontSize = '1.5rem';
     hoursSection.appendChild(hoursTitle);
     hoursSection.appendChild(hoursText);
 
@@ -39,6 +43,8 @@ function generateFooter() {
     const contactText = document.createElement('p');
     contactText.innerHTML = 'Teléfono: +56 9 1234 5678<br>Email: contacto@taller.com';
     contactText.style.color = '#fff';
+    contactTitle.style.fontSize = '3rem';
+    contactText.style.fontSize = '1.5rem';
     contactSection.appendChild(contactTitle);
     contactSection.appendChild(contactText);
 
