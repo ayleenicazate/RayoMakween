@@ -24,20 +24,20 @@
 
         // Validar nombre (por ejemplo, longitud mínima)
         if (nameInput.value.length < 3) {
-            nameError.textContent = "El nombre debe tener al menos 3 caracteres.";
+            nameError.textContent = "Mínimo 3 carácteres.";
             hasErrors = true;
         }
 
         // Validar correo electrónico (por ejemplo, formato válido)
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailInput.value)) {
-            emailError.textContent = "El correo electrónico no es válido.";
+            emailError.textContent = "Favor seguir formato válido.";
             hasErrors = true;
         }
 
         // Validar contraseña (por ejemplo, longitud mínima)
         if (passwordInput.value.length < 6) {
-            passwordError.textContent = "La contraseña debe tener al menos 6 caracteres.";
+            passwordError.textContent = "Mínimo 6 carácteres.";
             hasErrors = true;
         }
 
