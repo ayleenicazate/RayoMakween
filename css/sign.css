@@ -157,32 +157,6 @@ label{
     height: auto;
 }
 
-/* .form-label {
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: initial;
-    font-size: 13px;
-    letter-spacing: 2px;
-    padding-left: 10px;
-} */
-
-/* input {
-    background: rgba(225, 225, 225, 0.3);
-    height: 40px;
-    line-height: 40px;
-    border-radius: 100px;
-    padding: 0px 20px;
-    border: none;
-    margin-bottom: 20px;
-    color: white;
-} */
-
-/* .login .form-control {
-    margin-bottom: 10px;
-} */
-
-/* .login .btn-primary {
-    width: 100%;
-} */
 
 .bg {
     background-image: url('../assets/imglogin.jpg');
