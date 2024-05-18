@@ -107,8 +107,9 @@ form {
 .btn {
     font-size: 20px;
 }
-#sign {
+#sign, #title-modal{
     font-family: "jaini", sans-serif;
+    color: white;
     font-size: 8rem;
 }
 .modal {
