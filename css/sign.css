@@ -112,6 +112,11 @@ form {
     color: white;
     font-size: 8rem;
 }
+
+label{
+    color: white;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -127,10 +132,9 @@ form {
     background-size: cover;
     background-position: center;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #000000;
     max-width: 400px;
     width: 90%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: absolute;
     top: 50%;
