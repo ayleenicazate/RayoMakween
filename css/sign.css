@@ -102,6 +102,7 @@ form {
     height: 100%;
     backdrop-filter: brightness(40%);
     display: flex;
+
 }
 
 .btn {
@@ -140,7 +141,8 @@ label{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    /* text-align: center; */
+    align-items: center;
 }
 
 .close {
