@@ -67,7 +67,7 @@ function generateNavbar() {
       container.appendChild(temperatureSpan);
       
       const popover = new bootstrap.Popover(temperatureSpan);
-
+      //permite mostrar el mensaje al momento de clockear
       temperatureSpan.addEventListener('click', () => {
           popover.show();
 
