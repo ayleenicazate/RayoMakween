@@ -147,8 +147,9 @@ label{
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
+    color: white;
 }
 
 .image img {
